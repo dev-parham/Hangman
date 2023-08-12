@@ -1,0 +1,112 @@
+* button {
+  background-color: rgb(234, 240, 255);
+  border-color: black;
+  border-radius: 0.3em;
+  border-width: 0.01em;
+}
+
+button:hover {
+  background-color: rgb(31, 55, 118);
+  color: aliceblue;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 8px;
+  height: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Lato SemiBold";
+  padding: 0.5em;
+}
+
+h1 {
+  text-align: center;
+}
+
+#letters {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  align-self: center;
+  margin: 1em;
+  gap: 0.2em;
+  display: none;
+}
+
+#letters div {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.5em;
+  border: 1px solid gray;
+  border-radius: 0.2em;
+  color: rgb(51, 20, 255);
+  width: auto;
+  height: auto;
+  line-height: 0.9;
+}
+
+#letters div:hover {
+  background-color: rgb(218, 218, 254);
+}
+
+#clue {
+  display: none;
+  height: auto;
+}
+
+#clue p {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 0.5em;
+}
+#letters div.used {
+  background-color: lightgray;
+  opacity: 0.5;
+}
+
+section#image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  display: none;
+}
+
+img {
+  display: flex;
+  width: 15%;
+}
+
+section#gameOver p {
+  text-align: center;
+  font-size: 1rem;
+  display: none;
+}
+
+section#gameOver {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+section#gameOver button {
+  margin: 0;
+  font-size: 1rem;
+  display: none;
+}
